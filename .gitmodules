@@ -1,0 +1,8 @@
+[submodule "thirdparty/OpenCL-ICD-Loader"]
+	path = thirdparty/OpenCL-ICD-Loader
+	url = git@github.com:HanetakaChou/OpenCL-ICD-Loader.git
+	branch = master
+[submodule "thirdparty/TensorFlow-Lite"]
+	path = thirdparty/TensorFlow-Lite
+	url = git@github.com:HanetakaChou/TensorFlow-Lite.git
+	branch = master

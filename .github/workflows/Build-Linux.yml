@@ -1,0 +1,23 @@
+name: Build Linux
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app_debug: [true, false]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'
+      - shell: bash
+        run: |
+          sudo apt install libxcb1-dev
+          sudo apt install libxcb-present-dev
+          make -C ./build -f Linux.mk APP_DEBUG=${{matrix.app_debug}} -j$(nproc)
