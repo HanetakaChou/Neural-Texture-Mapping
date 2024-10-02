@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34902.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCL", "OpenCL.vcxproj", "{C4DD5FCD-4169-402C-BB7A-D7E840CAB228}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Neural-Texture-Mapping", "Neural-Texture-Mapping.vcxproj", "{70A5B1C9-F9B5-44AB-ABC2-C63A4C828446}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C4DD5FCD-4169-402C-BB7A-D7E840CAB228} = {C4DD5FCD-4169-402C-BB7A-D7E840CAB228}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4DD5FCD-4169-402C-BB7A-D7E840CAB228}.Debug|x64.ActiveCfg = Debug|x64
+		{C4DD5FCD-4169-402C-BB7A-D7E840CAB228}.Debug|x64.Build.0 = Debug|x64
+		{C4DD5FCD-4169-402C-BB7A-D7E840CAB228}.Release|x64.ActiveCfg = Release|x64
+		{C4DD5FCD-4169-402C-BB7A-D7E840CAB228}.Release|x64.Build.0 = Release|x64
+		{70A5B1C9-F9B5-44AB-ABC2-C63A4C828446}.Debug|x64.ActiveCfg = Debug|x64
+		{70A5B1C9-F9B5-44AB-ABC2-C63A4C828446}.Debug|x64.Build.0 = Debug|x64
+		{70A5B1C9-F9B5-44AB-ABC2-C63A4C828446}.Release|x64.ActiveCfg = Release|x64
+		{70A5B1C9-F9B5-44AB-ABC2-C63A4C828446}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1626A9A1-5FD5-47FE-9AE8-6FBB0C2DC203}
+	EndGlobalSection
+EndGlobal
