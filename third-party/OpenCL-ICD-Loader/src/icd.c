@@ -108,8 +108,8 @@ void khrIcdVendorAdd(const char *libraryName)
     result = p_clIcdGetPlatformIDs(0, NULL, &platformCount);
     if (CL_SUCCESS != result)
     {
-        KHR_ICD_TRACE("failed to get extension function address clIcdGetPlatformIDsKHR\n");
-        goto Done;
+       	// TODO: For NVIDIA ICD, the "num_entries" paramter of clIcdGetPlatformIDsKHR can NOT be zero.
+		platformCount = 1;
     }
     platforms = (cl_platform_id *)malloc(platformCount * sizeof(cl_platform_id) );
     if (!platforms)
